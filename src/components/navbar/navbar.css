@@ -1,0 +1,157 @@
+.nav {
+    z-index: 900;
+}
+
+.App-header {
+    width: 100%;
+    height: 90px;
+    padding: 1%;
+    position:relative;
+    background-color: white;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.074);
+}
+
+.logo {
+    position: absolute;
+    width: 150px;
+    height: 25px;
+    left: 10%;
+    top: 40%;
+}
+
+.ulNav {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 20%;
+    flex-direction: row;
+}
+
+
+.Itemli{
+    width: 100%;
+    list-style: none;
+    position: relative;
+
+}
+
+.link{
+    color:#9d9ea2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 100%;
+}
+
+.link:hover{
+    color:black;
+}
+
+.link::after {
+    content: "";
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3.5px;
+    transform: scaleX(0);
+    transition: all .3s;
+    background: linear-gradient(148deg, rgba(50, 209, 103, 1) 0%, rgba(46, 196, 162, 1) 34%, rgba(42, 184, 211, 1) 100%);
+}
+
+.link:hover::after {
+
+    width: 100%;
+    transform: scaleX(1);
+}
+
+.btn{
+    border: none;
+    height: 35px;
+    width: 130px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    font-size: 0.8rem;
+    right: 10%;
+    background: rgb(50, 209, 103);
+    background: linear-gradient(148deg, rgba(50, 209, 103, 1) 0%, rgba(46, 196, 162, 1) 34%, rgba(42, 184, 211, 1) 100%);
+}
+
+.btn:hover {
+    background: linear-gradient(148deg, rgb(105, 215, 142) 0%, rgb(112, 207, 185) 34%, rgb(119, 210, 228) 100%);
+}
+.button {
+    margin-right: -230px;
+}
+.burgar, .close{
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    
+    .App-header{
+        position: relative;
+    }
+
+    .ulNav {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        margin: 0 -45%;
+        padding: 0px;
+        transition: 1s;
+        padding-left: 0;
+        z-index: 2000;
+    }
+
+    .ulNav li {
+        text-align: center;
+        height: fit-content;
+        width: 100%;
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        padding: 20px 0px;
+        
+    }
+
+    .ulNav.hidden {
+        
+        top: 0px;
+        display: none;
+    }
+
+
+
+
+    .btn{
+        display: none;
+    }
+
+    .burgar {
+        display: block;
+    }
+
+    .burgar.hidden {
+        display: none;
+    }
+    .close{
+        display: none;
+    }
+
+    .close.show {
+        display: block;
+    }
+}
+

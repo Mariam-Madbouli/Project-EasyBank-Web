@@ -1,0 +1,189 @@
+.container4{
+    width: 100%;
+    margin: 0 auto;
+    padding: 4% 10%;
+    background-color: #2d314e;
+}
+/* 
+.section4 {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: row;
+} */
+
+/* .logoIcon{ */
+    /* display: flex; */
+/* } */
+
+/* .icon:hover{
+    fill:aqua;
+}
+.icons{
+    padding: 0 2px;
+} */
+
+
+
+
+
+
+
+.section4 {
+    display: flex;
+    align-items: center;
+}
+
+.logoIcon{
+    min-height: 100px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+
+}
+.icon {
+    margin-left: 10px;
+}
+
+/* a:hover{
+    fill: red;
+} */
+
+
+.ulall {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+.ulall ul {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    text-align: left;
+    padding: 0px;
+}
+
+.ulall ul li {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.ulall ul li:hover {
+    color: #2ec4a2;
+}
+
+.copyright {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.copyright .copy {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    padding-top: 50px;
+    padding-bottom:  0px;
+}
+
+
+
+.btn4 {
+    border: none;
+    height: 35px;
+    width: 130px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    font-size: 0.8rem;
+    right: 10%;
+    background: rgb(50, 209, 103);
+    background: linear-gradient(148deg, rgba(50, 209, 103, 1) 0%, rgba(46, 196, 162, 1) 34%, rgba(42, 184, 211, 1) 100%);
+}
+
+.btn4:hover {
+    background: linear-gradient(148deg, rgb(105, 215, 142) 0%, rgb(112, 207, 185) 34%, rgb(119, 210, 228) 100%);
+}
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+
+    .section4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logoIcon {
+        width: 100%;
+        margin-top: 20px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .logo2 {
+        padding-bottom: 10px;
+    }
+
+    .ulall {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px 0px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .ulall ul {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .ulall ul li {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    
+
+    .copyright {
+        width: 100%;
+        align-items: center;
+    }
+
+    .btn4{
+        margin-top: 10px;
+    }
+    .copyright .copy {
+        letter-spacing: 0.5px;
+        padding-top: 10px;
+    }
+
+
+
+
+}
